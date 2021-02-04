@@ -13,7 +13,8 @@ Diy_Core() {
 	INCLUDE_Passwall=false
 	INCLUDE_Keep_Latest_Xray=true
 	INCLUDE_mt7621_OC1000MHz=true
-	INCLUDE_Enable_FirewallPort_53=true
+	INCLUDE_Enable_FirewallPort_53=false
+	INCLUDE_VSSR=true
 }
 
 Diy-Part1() {

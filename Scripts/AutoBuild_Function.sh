@@ -37,6 +37,10 @@ Diy_Part1_Base() {
 	if [[ "${INCLUDE_mt7621_OC1000MHz}" == "true" ]];then
 		Replace_File Customize/102-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.4
 	fi
+	if [[ "${INCLUDE_VSSR}" == "true" ]];then
+		ExtraPackages git lean lua-maxminddb https://github.com/jerrykuku master
+		ExtraPackages git lean luci-app-vssr https://github.com/jerrykuku master
+	fi
 }
 
 Diy_Part2_Base() {

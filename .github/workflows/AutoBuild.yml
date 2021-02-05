@@ -122,7 +122,7 @@ jobs:
       if: env.UPLOAD_BIN_DIR == 'true' && !cancelled()
       with:
         name: OpenWrt_bin_${{ env.Artifacts_DATE }}
-        path: openwrt/bin
+        path: openwrt
 
     - name: Upload Firmware to Releases
       uses: softprops/action-gh-release@v1
